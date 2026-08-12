@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🔥 Feniks Cipher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">🔥</div>
+      <div>
+        <h1>FENIKS CIPHER</h1>
+        <p>Przeglądarkowa maszyna szyfrująca</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <label for="key">Klucz Feniksa</label>
+      <input id="key" value="KOT-731-04" autocomplete="off" spellcheck="false">
+      <small>Format: AAA-000-00, np. KOT-731-04</small>
+
+      <label for="input">Wiadomość</label>
+      <textarea id="input" placeholder="Wpisz wiadomość..."></textarea>
+
+      <div class="buttons">
+        <button id="encrypt">🔒 SZYFRUJ</button>
+        <button id="decrypt">🔓 ODSZYFRUJ</button>
+        <button id="clear" class="secondary">🧹 WYCZYŚĆ</button>
+      </div>
+
+      <label for="output">Wynik</label>
+      <textarea id="output" readonly placeholder="Tutaj pojawi się wynik..."></textarea>
+
+      <div class="buttons">
+        <button id="copy" class="secondary">📋 KOPIUJ WYNIK</button>
+        <button id="share" class="secondary">🔗 UTWÓRZ LINK</button>
+      </div>
+
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="info">
+      <h2>Jak się bawić?</h2>
+      <ol>
+        <li>Ustalcie wspólne hasło, np. <code>KOT-731-04</code>.</li>
+        <li>Wpisz wiadomość i kliknij <b>SZYFRUJ</b>.</li>
+        <li>Wyślij znajomemu wynik oraz hasło.</li>
+        <li>Znajomy wkleja tekst, wpisuje hasło i klika <b>ODSZYFRUJ</b>.</li>
+      </ol>
+      <p>To projekt edukacyjno-rozrywkowy, a nie zamiennik współczesnego szyfrowania kryptograficznego.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
